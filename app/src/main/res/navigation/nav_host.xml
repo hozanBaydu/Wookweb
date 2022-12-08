@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.hozanbaydu.wookweb.view.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_identityFragment"
+            app:destination="@id/identityFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_designFragment"
+            app:destination="@id/designFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_adsFragment"
+            app:destination="@id/adsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mobileFragment"
+            app:destination="@id/mobileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_seoFragment"
+            app:destination="@id/seoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adsFragment"
+        android:name="com.hozanbaydu.wookweb.view.AdsFragment"
+        android:label="AdsFragment" >
+        <action
+            android:id="@+id/action_adsFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/designFragment"
+        android:name="com.hozanbaydu.wookweb.view.DesignFragment"
+        android:label="DesignFragment" >
+        <action
+            android:id="@+id/action_designFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/identityFragment"
+        android:name="com.hozanbaydu.wookweb.view.IdentityFragment"
+        android:label="IdentityFragment" >
+        <action
+            android:id="@+id/action_identityFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mobileFragment"
+        android:name="com.hozanbaydu.wookweb.view.MobileFragment"
+        android:label="MobileFragment" >
+        <action
+            android:id="@+id/action_mobileFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seoFragment"
+        android:name="com.hozanbaydu.wookweb.view.SeoFragment"
+        android:label="SeoFragment" >
+        <action
+            android:id="@+id/action_seoFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.hozanbaydu.wookweb.view.WebFragment"
+        android:label="WebFragment" >
+        <action
+            android:id="@+id/action_webFragment_to_offerFragment"
+            app:destination="@id/offerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerFragment"
+        android:name="com.hozanbaydu.wookweb.view.OfferFragment"
+        android:label="OfferFragment" >
+        <action
+            android:id="@+id/action_offerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
