@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backimage"
+    >
+
+    <ImageView
+        android:id="@+id/animImageView"
+        android:layout_width="122dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/animImageViewTextview"
+        android:layout_width="315dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+    </ImageView>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/mobileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="20dp"
+            android:background="@drawable/mobileimage"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="279dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/webButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/webbutton"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="279dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/designButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/designbutton"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="279dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/seoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/seobutton"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="279dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/identityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/identitybutton"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="279dp">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/adsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/adsbutton"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="279dp">
+
+        </ImageButton>
+
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
